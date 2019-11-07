@@ -61,7 +61,7 @@ function itexmo({
         option
       )
       .then(data => message(data.data))
-      .catch(res => res)
+      .catch(res => res.toJSON().message)
   }
 
   return { send }

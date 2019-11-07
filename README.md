@@ -20,5 +20,4 @@ const itexmo = require('itexmo')({ apiCode: 'YOUR_API_CODE' })
 itexmo
   .send({ to: '+63xxxxxxxxx', body: 'hello world' })
   .then(message => console.log(message))
-  .catch(err => console.log(err))
 ```
